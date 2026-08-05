@@ -1,0 +1,39 @@
+name = "Buzan Company Aux Mod"
+author = "Bzn Mod Team"
+prefix = "bzn"
+mainprefix = "z"
+
+[version]
+git_hash = 8 #0 to disable
+
+[files]
+include = [
+	"logo.paa",
+	"changelog.md",
+	"mod.cpp",
+	"README.md",
+	"LICENSE.md"
+]
+
+[hemtt.release]
+folder = "Bzn Aux Mod"
+
+[hemtt.launch.default]
+presets = [
+"main",
+]
+parameters = [
+	"-skipIntro",
+	"-noSplash",
+	"-showScriptErrors",
+	"-debug",
+	"-filePatching",
+]
+executable = "arma3_x64" # Default: "arma3_x64"
+file_patching = true # Default: true, allows live config and sqf editing with a "hemtt dev" command
+
+[binarize]
+enabled = true # Default: true, if we get a linux dev I can change this.
+
+[rapify]
+enabled = true #Don't change this, required for macros and other preprocessor commands to function
